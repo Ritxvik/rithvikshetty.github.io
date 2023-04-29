@@ -1,3 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Carter+One&family=Great+Vibes&family=Manrope:wght@200&family=Righteous&display=swap');
+
+
+
 body {
     background-color: #000506;
+}
+
+.body p{
+    color: #fff;
+}
+
+/* --------------------- nav bar -------------------------- */
+
+nav{
+    background-color: rgba(0, 0, 0, 0.61);   
+    backdrop-filter: blur(5px);
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+    padding-right: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background: linear-gradient(#080808);
+}
+  
+nav ul{
+      flex: 2;
+      text-align: right;
+      padding-right: 50px;
+      font-family: sans-serif;
+}
+nav ul li{
+      display: inline-block;
+      list-style: none;
+      margin: 10px 50px;
+}
+nav ul li a{
+      color: white;
+      text-decoration: none;
+      position: relative;}
+nav ul{
+        flex: 2;
+        text-align: right;
+        padding-right: 50px;
+}
+nav ul li{
+          display: inline-block;
+          list-style: none;
+          margin: 10px 50px;
+}
+nav ul li a{
+          color: white;
+          text-decoration: none;
+          position: relative;
+          font-family: 'Bruno Ace', serif;
+          font-size: 15px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00aaff ;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 110%;
+}
+nav h1{
+  font-family: 'Bruno Ace', cursive;
+  font-family: 'Great Vibes', cursive;
+  color: white;
+  margin-left: 5%;
+  font-size: 45px;
+  margin-top: 1%;
+}
+nav span{
+  color: white;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #00c8ff ;
+    transition: width 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* ----------------------header---------------- */
+
+.container{
+    display: flex;
+    color: white;
+    margin-top: 0px;
+    flex-basis: 40px;
 }
